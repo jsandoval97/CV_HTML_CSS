@@ -1,0 +1,21 @@
+:root {
+    --theme-color: white;
+    --text-color: black;
+    --text-color-inverse: white;
+    --primary-color:#60be5c;
+    --secondary-color: #305f2e;
+    --nav-bar-shallow-color: #93f18f;
+    --menu-mobile-background-color: #d0d2cf;
+
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
