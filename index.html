@@ -8,9 +8,12 @@
     <title>Julia Sandoval</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/nav-bar.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/skills.css">
     <script src="https://kit.fontawesome.com/54db4656e8.js" crossorigin="anonymous"></script>
     <script defer src="/js/index.js"></script>
 </head>
@@ -37,12 +40,43 @@
             </ul>
         </nav>
     </header>
-    <section class="profile">
-        <div class="profile-info"> 
-            <h1>Hola, mi nombre es <br> Julia Sandoval</h1>
-        </div>
-        <div class="profile-img"></div>
-    </section>
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">Hola, mi nombre es <br> Julia Sandoval</h1>
+                <p class="profile-details">
+                    Soy Oficial del Ejército del Arma de Ingenieros, actualmente ocupo la jerarquía de Teniente 2º, en
+                    condiciones de ascender a la jerarquía de Teniente 1°. Dentro del Ejército me especialicé en el área
+                    de
+                    Protección QBRN (Químico, Biológico, Radiológico-Nuclear) para lo cual realicé varios cursos en el
+                    exterior, tanto presenciales como virtuales y repliqué estos conocimientos participando como
+                    instructora
+                    en los distintos cursos realizados a nivel nacional. <br>
+                    En mi tiempo libre me gusta realizar distintos tipos de manualidades,
+                    y disfruto mucho de la música. <br>
+                    Reciente madre de una hermosa niña llamada Helena.
+                </p>
+                <button class="profile-btn">
+                    Descargar CV
+                </button>
+            </div>
+            <div class="profile-img-section">
+                <img class="profile-img" src="/img/profile-img.jpeg" alt="madre e hija">
+            </div>
+        </section>
+    </div>
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">JavaScript</li>
+                <li class="skills-skill">C#</li>
+                <li class="skills-skill">Java</li>
+            </ul>
+        </section>
+    </div>
 </body>
 
 </html>

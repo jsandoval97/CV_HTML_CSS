@@ -1,8 +1,11 @@
 .topheader {
-  box-shadow: 0 4px var(--primary-color);
-  position: fixed;
+  box-shadow: 0 4px 5px var(--primary-color);
   background-color: var(--theme-color);
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .topnav {
@@ -18,7 +21,7 @@
 .logo {
   display: flex;
   align-items: center;
-  font-size: 25 px;
+  font-size: 30 px;
   font-weight: 500;
   color: var(--secondary-color);
 }
