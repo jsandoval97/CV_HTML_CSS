@@ -78,8 +78,4 @@
   .profile-btn {
     font-size: 18px;
   }
-
-  .profile-btn:hover {
-    filter: brightness(150%);
-  }
 }
