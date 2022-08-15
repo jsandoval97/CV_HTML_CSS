@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/skills.css">
     <link rel="stylesheet" href="/css/experiences.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <script src="https://kit.fontawesome.com/54db4656e8.js" crossorigin="anonymous"></script>
     <script defer src="/js/index.js"></script>
 </head>
@@ -33,16 +34,15 @@
                 <button class="close-menu" aria-label="Cerrar menú">
                     <i class="fas fa-times fa-3x"></i>
                 </button>
-                <li><a href="#profile">Perfil</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#profile" class="selected">Perfil</a></li>
+                <li><a href="#experiences">Experiencia</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <div class="horizontal-padding vertical-padding">
-        <section class="profile">
+        <section class="profile" id="profile">
             <div class="profile-info">
                 <h1 class="profile-title">Hola, mi nombre es <br> Julia Sandoval</h1>
                 <p class="profile-details">
@@ -58,7 +58,7 @@
                     Reciente madre de una hermosa niña llamada Helena.
                 </p>
                 <button class="profile-btn">
-                    Descargar CV
+                    <a href="/pdf/CV Sandoval.pdf" target="_blank" class="profile-btn">Descargar CV</a>
                 </button>
             </div>
             <div class="profile-img-section">
@@ -66,7 +66,7 @@
             </div>
         </section>
     </div>
-    <section class="experiences">
+    <section class="experiences" id="experiences">
         <img src="/img/wave.svg">
         <div class="experiences-body">
             <h2 class="experiences-title">Experiencia</h2>
@@ -103,14 +103,13 @@
                     <div class="experience-batallion">Bn. "Charrúa" de Ing.Cbte. N°3</div>
                     <div class="experience-position">Jefe de Sección de Ingenieros</div>
                 </div>
-                
                 <div class="line"></div>
             </div>
         </div>
         <img src="/img/wave.svg" class="wave-bottom">
     </section>
     <div class="horizontal-padding vertical-padding">
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="skills-title">Habilidades</h2>
             <ul class="skills-list">
                 <li class="skills-skill">HTML</li>
@@ -121,6 +120,19 @@
             </ul>
         </section>
     </div>
+    <section class="contact vertical-padding" id="contact">
+        <form action="https://formspree.io/f/xbjbjzqy" method="POST" class="form">
+            <div class="contact-container">
+                <h2 class="contact-title">Contacto</h2>
+                <input type="text" class="form-input" placeholder="Nombre" name="name">
+                <input type="email" name="email" class="form-input" placeholder="Correo electrónico">
+                <textarea class="form-input form-input--message" name="message" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar" class="form-cta">
+            </div>
+        </form>
+
+
+    </section>
 </body>
 
 </html>
